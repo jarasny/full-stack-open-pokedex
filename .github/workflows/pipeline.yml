@@ -38,5 +38,5 @@ jobs:
           heroku_app_name: "pokedex-jarasny"
           heroku_email: "jarazny.mateusz@outlook.com"
           healthcheck: "https://pokedex-jarasny.herokuapp.com/health"
-          checkstring: "test branch"
+          checkstring: "ok"
           rollbackonhealthcheckfailed: true
