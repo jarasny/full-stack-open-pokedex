@@ -51,6 +51,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
+  messages_job:
+    runs-on: ubuntu-20.04
+    steps:
       - name: github context
         env:
           GITHUB_CONTEXT: ${{ toJson(github.event.commits.*.message) }}
