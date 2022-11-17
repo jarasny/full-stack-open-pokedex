@@ -37,7 +37,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "pokedex-jarasny"
           heroku_email: "jarazny.mateusz@outlook.com"
-          healthcheck: "https://pokedex-jarasny.herokuapp.com/health" 
+          healthcheck: "https://pokedex-jarasny.herokuapp.com/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
   tag_release:
