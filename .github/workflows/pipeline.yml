@@ -29,3 +29,7 @@ jobs:
           wait-on: http://localhost:5000
       - name: Deploy to Heroku
         uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "pokedex-jarasny"
+          heroku_email: "jarazny.mateusz@outlook.com"
