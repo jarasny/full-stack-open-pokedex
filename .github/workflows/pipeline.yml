@@ -51,11 +51,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
-  messages_job:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - name: github context
-        env:
-          GITHUB_CONTEXT: ${{ contains(join(github.event.commits.*.message), '#skip') }}
-        run: echo "$GITHUB_CONTEXT"
