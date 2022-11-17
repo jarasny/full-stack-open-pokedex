@@ -57,4 +57,4 @@ jobs:
       - name: github context
         env:
           GITHUB_CONTEXT: ${{ toJson(github.event.commits.*.message) }}
-        run: echo "$GITHUB_CONTEXT"
+          run: echo "$GITHUB_CONTEXT"
